@@ -1,22 +1,25 @@
-# package less1;
+package less1;
 
-public class less3 {
+public class num5 {
     public static void main(String[] args) {
-        int arr[] = {12,435,567,768};
-        int min = 0;
-        int max = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-            }
-            min = max;
-        }
-        for (int j = 0; j < arr.length; j++) {
-            if (arr[j]<min) {
-                min = arr[j];
-            }
-        }
-        System.out.println("Мин:" + min);
-        System.out.println("Макс:" + max);
+        int[] arr = {2,4,6,3,4,8};
+        boolean rez = true;
+        one(arr,rez);
+
+    }
+
+
+    public static void one(int[] arr,boolean rez) {
+            int sum1 = arr[0] + arr[1] + arr[2];
+            int sum2 = arr[3] + arr[4] + arr[5];
+        System.out.println("Сумма первых 3:"+sum1);
+        System.out.println("Сумма вторых 3:"+sum2);
+            if(sum1 != sum2){
+                rez = false;}
+            else {
+                rez = true;}
+        System.out.println("Результат:  "+rez);
+
+
     }
 }
